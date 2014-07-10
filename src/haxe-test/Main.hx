@@ -10,8 +10,7 @@ class Main
 {
 	public static function main()
 	{
-		var a:com.qifun.statelessFuture.Awaitable<Int, scala.runtime.BoxedUnit> = null;
-
+		var td:TailCalls_Done<Dynamic> = null;
 	}
 }
 
