@@ -2,7 +2,7 @@ package scala.reflect;
 
 import haxe.Int64;
 
-extern interface ClassTag<T>
+extern interface ClassTag<T> extends OptManifest<T>
 {
 }
 
