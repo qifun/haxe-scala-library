@@ -1,5 +1,6 @@
 package scala.collection.immutable;
 
-extern class List<Element> implements Seq<Element>
+extern class List<A>
 {
+
 }
