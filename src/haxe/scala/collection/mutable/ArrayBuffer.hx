@@ -8,13 +8,6 @@ extern class ArrayBuffer<A> extends AbstractTraversable<A>
 
 }
 
-class ArrayBufferPlusEqualsOperator
-{
-  public static function plusEquals(arrayBuffer:ArrayBuffer<Dynamic>, obj:Dynamic)
-  {
-    return untyped __java__("arrayBuffer.$plus$eq(obj)");
-  }
-}
 
 @:native("scala.collection.mutable.ArrayBuffer$")
 extern class ArrayBufferSingleton extends scala.collection.generic.GenericCompanion<Dynamic>
