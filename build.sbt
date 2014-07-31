@@ -1,1 +1,1 @@
-haxeSettings
+haxeJavaSettings
