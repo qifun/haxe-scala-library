@@ -1,4 +1,5 @@
 package scala.collection;
+import scala.collection.generic.FilterMonadic;
 
 
 
