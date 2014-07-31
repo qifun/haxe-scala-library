@@ -11,5 +11,7 @@ scala.collection.generic.Subtractable<A, This> extends
 scala.collection.Parallelizable<scala.Tuple2<A, B>, Dynamic>  
 {
   public function toSeq():scala.collection.Seq<scala.Tuple2<A, B>>;
+  public function iterator():scala.collection.Iterator<scala.Tuple2<A, B>>;
+
 }
 #end

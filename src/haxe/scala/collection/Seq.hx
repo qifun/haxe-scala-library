@@ -4,7 +4,8 @@ package scala.collection;
 
 extern interface Seq<A> extends 
 scala.PartialFunction<Dynamic, A> extends
-scala.collection.Iterable<A>
+scala.collection.Iterable<A> extends
+scala.collection.SeqLike<A, scala.collection.Seq<A>>
 {
 
 }

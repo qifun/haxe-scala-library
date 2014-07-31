@@ -18,6 +18,43 @@ class Main
 {
 	public static function main(arguments:Vector<String>):Void
 	{
+    testSet();
+	}
+  
+  private static function testSet():Void
+  {
+    var builder = scala.collection.immutable.SetSingleton.getInstance().newBuilder();
+    BuilderPlusEqualsOperator.plusEquals(builder, 1);
+    BuilderPlusEqualsOperator.plusEquals(builder, 2);
+    BuilderPlusEqualsOperator.plusEquals(builder, 3);
+    BuilderPlusEqualsOperator.plusEquals(builder, 4);
+    BuilderPlusEqualsOperator.plusEquals(builder, 5);
+    BuilderPlusEqualsOperator.plusEquals(builder, 6);
+    var iterator = builder.result().iterator();
+    while (iterator.hasNext())
+    {
+      trace(iterator.next());
+    }
+  }
+  
+  private static function testSeq():Void
+  {
+    var builder = scala.collection.immutable.SeqSingleton.getInstance().newBuilder();
+    BuilderPlusEqualsOperator.plusEquals(builder, 1);
+    BuilderPlusEqualsOperator.plusEquals(builder, 2);
+    BuilderPlusEqualsOperator.plusEquals(builder, 3);
+    BuilderPlusEqualsOperator.plusEquals(builder, 4);
+    BuilderPlusEqualsOperator.plusEquals(builder, 5);
+    BuilderPlusEqualsOperator.plusEquals(builder, 6);
+    var iterator = builder.result().iterator();
+    while (iterator.hasNext())
+    {
+      trace(iterator.next());
+    }
+  }
+  
+  private static function testMap():Void
+  {
     var builder = scala.collection.immutable.MapSingleton.getInstance().newBuilder();
     BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(1, 2));
     BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(4, 3));
@@ -25,7 +62,10 @@ class Main
     BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(5, 6));
     BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(6, 5));
     BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(2, 1));
-    var map = builder.result();
-    trace(map);
-	}
+    var iterator = builder.result().iterator();
+    while (iterator.hasNext())
+    {
+      trace(iterator.next());
+    }
+  }
 }

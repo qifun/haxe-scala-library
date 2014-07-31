@@ -10,6 +10,6 @@ scala.Equals extends
 scala.collection.TraversableLike<A, Repr> extends
 scala.collection.GenIterableLike<A, Repr>
 {
-  
+  public function iterator():scala.collection.Iterator<A>;
 }
 #end
