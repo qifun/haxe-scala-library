@@ -1,5 +1,7 @@
 package scala.collection.immutable;
 
+#if java
+import scala.collection.generic.ImmutableMapFactory;
 extern interface Map<A, B> extends 
 scala.collection.immutable.Iterable<scala.Tuple2<A, B>> extends
 scala.collection.Map<A, B>
@@ -15,3 +17,4 @@ extern class MapSingleton extends scala.collection.generic.ImmutableMapFactory<D
 		return untyped __java__("scala.collection.immutable.Map$.MODULE$");
 	}
 }
+#end

@@ -1,5 +1,9 @@
 package scala.collection.immutable;
 
+#if java
+
+import scala.collection.generic.ImmutableSetFactory;
+
 extern interface Set<A> extends 
 scala.collection.immutable.Iterable<A> extends
 scala.collection.Set<A> extends
@@ -18,3 +22,4 @@ extern class SetSingleton extends scala.collection.generic.ImmutableSetFactory<D
 	}
 
 }
+#end
