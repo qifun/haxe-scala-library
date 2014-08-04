@@ -1,5 +1,4 @@
 import haxe.ds.Vector;
-import scala.BuilderPlusEqualsOperator;
 import scala.collection.immutable.Seq;
 import scala.collection.immutable.Set;
 import scala.collection.immutable.Map;
@@ -18,18 +17,18 @@ class Main
 {
 	public static function main(arguments:Vector<String>):Void
 	{
-    testSet();
+    testSeq();
 	}
   
   private static function testSet():Void
   {
     var builder = scala.collection.immutable.SetSingleton.getInstance().newBuilder();
-    BuilderPlusEqualsOperator.plusEquals(builder, 1);
-    BuilderPlusEqualsOperator.plusEquals(builder, 2);
-    BuilderPlusEqualsOperator.plusEquals(builder, 3);
-    BuilderPlusEqualsOperator.plusEquals(builder, 4);
-    BuilderPlusEqualsOperator.plusEquals(builder, 5);
-    BuilderPlusEqualsOperator.plusEquals(builder, 6);
+    builder.plusEquals(1);
+    builder.plusEquals(2);
+    builder.plusEquals(3);
+    builder.plusEquals(4);
+    builder.plusEquals(5);
+    builder.plusEquals(6);
     var iterator = builder.result().iterator();
     while (iterator.hasNext())
     {
@@ -40,12 +39,12 @@ class Main
   private static function testSeq():Void
   {
     var builder = scala.collection.immutable.SeqSingleton.getInstance().newBuilder();
-    BuilderPlusEqualsOperator.plusEquals(builder, 1);
-    BuilderPlusEqualsOperator.plusEquals(builder, 2);
-    BuilderPlusEqualsOperator.plusEquals(builder, 3);
-    BuilderPlusEqualsOperator.plusEquals(builder, 4);
-    BuilderPlusEqualsOperator.plusEquals(builder, 5);
-    BuilderPlusEqualsOperator.plusEquals(builder, 6);
+    builder.plusEquals(1);
+    builder.plusEquals(2);
+    builder.plusEquals(3);
+    builder.plusEquals(4);
+    builder.plusEquals(5);
+    builder.plusEquals(6);
     var iterator = builder.result().iterator();
     while (iterator.hasNext())
     {
@@ -56,12 +55,12 @@ class Main
   private static function testMap():Void
   {
     var builder = scala.collection.immutable.MapSingleton.getInstance().newBuilder();
-    BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(1, 2));
-    BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(4, 3));
-    BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(3, 4));
-    BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(5, 6));
-    BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(6, 5));
-    BuilderPlusEqualsOperator.plusEquals(builder, new Tuple2(2, 1));
+    builder.plusEquals(new Tuple2(1, 2));
+    builder.plusEquals(new Tuple2(4, 3));
+    builder.plusEquals(new Tuple2(3, 4));
+    builder.plusEquals(new Tuple2(5, 6));
+    builder.plusEquals(new Tuple2(6, 5));
+    builder.plusEquals(new Tuple2(2, 1));
     var iterator = builder.result().iterator();
     while (iterator.hasNext())
     {
