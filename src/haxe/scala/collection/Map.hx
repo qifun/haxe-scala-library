@@ -15,11 +15,6 @@ extern class MapSingleton extends scala.collection.generic.MapFactory<Dynamic>
   /**
     使用这样的方式来workaround bug
     scala.collection.MapSingleton.getInstance().apply(untyped __java__("(scala.collection.Seq<scala.Tuple2<java.lang.Object, java.lang.Object>>)((scala.collection.Seq)(arrayBuffer.toSeq()))"));
-  **/
-	@:extern
-	public static inline function getInstance():MapSingleton
-	{
-		return untyped __java__("scala.collection.Map$.MODULE$");
-	}
+  **/  @:native("MODULE$") public static var MODULE(default, never):MapSingleton;
 }
 #end

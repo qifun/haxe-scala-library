@@ -5,9 +5,9 @@ package scala.collection;
 extern interface Iterator<A> extends TraversableOnce<A>
 {
   public function hasNext():Bool;
-  
+
   public function next():A;
-  
+
   public function isEmpty():Bool;
 }
 
@@ -15,14 +15,12 @@ extern interface Iterator<A> extends TraversableOnce<A>
 @:native("scala.collection.Iterator$")
 extern class IteratorSingleton
 {
-  @:extern
-  public static inline function getInstance():IteratorSingleton
-  {
-    return untyped __java__("scala.collection.Iterator$.MODULE$");
-  }
-  
+
+  @:native("MODULE$")
+  public static var singletonInstance(default, null):IteratorSingleton;
+
   public function apply<A>(_:scala.collection.Seq<A>):scala.collection.Iterator<A>;
-  
+
   public function iterate<T>(t:T, f:scala.Function1<T, T>):scala.collection.Iterator<T>;
 }
 #end

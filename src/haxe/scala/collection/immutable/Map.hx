@@ -11,10 +11,7 @@ scala.collection.Map<A, B>
 @:native("scala.collection.immutable.Map$")
 extern class MapSingleton extends scala.collection.generic.ImmutableMapFactory<Dynamic>
 {
-	@:extern
-	public static inline function getInstance():MapSingleton
-	{
-		return untyped __java__("scala.collection.immutable.Map$.MODULE$");
-	}
+
+  @:native("MODULE$") public static var MODULE(default, never):MapSingleton;
 }
 #end

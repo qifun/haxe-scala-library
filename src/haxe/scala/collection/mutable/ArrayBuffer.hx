@@ -12,11 +12,8 @@ extern class ArrayBuffer<A> extends AbstractTraversable<A>
 @:native("scala.collection.mutable.ArrayBuffer$")
 extern class ArrayBufferSingleton extends scala.collection.generic.GenericCompanion<Dynamic>
 {
-	@:extern
-	public static inline function getInstance():ArrayBufferSingleton
-	{
-		return untyped __java__("scala.collection.mutable.ArrayBuffer$.MODULE$");
-	}
+
+  @:native("MODULE$") public static var singletonInstance(default, never):ArrayBufferSingleton;
 
 }
 #end

@@ -12,11 +12,10 @@ scala.collection.Set<A>
 @:native("scala.collection.mutable.Set$")
 extern class SetSingleton extends scala.collection.generic.MutableSetFactory<Dynamic>
 {
-	@:extern
-	public static inline function getInstance():SetSingleton
-	{
-		return untyped __java__("scala.collection.mutable.Set$.MODULE$");
-	}
+
+  @:native("MODULE$")
+  public static var singletonInstance(default, null):SetSingleton;
+
   override public function empty<A>():scala.collection.mutable.Set<A>;
 
 }

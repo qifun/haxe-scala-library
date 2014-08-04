@@ -10,11 +10,8 @@ extern class IterableSingleton extends
 scala.collection.generic.GenTraversableFactory<Dynamic> implements
 scala.collection.generic.TraversableFactory<Dynamic>
 {
-  @:extern
-  public static inline function getInstance():IterableSingleton
-  {
-    return untyped __java__("scala.collection.Iterable$.MODULE$");
-  }
 
-  
+  @:native("MODULE$")
+  public static var singletonInstance(default, null):IterableSingleton;
+
 }

@@ -19,10 +19,10 @@ class Main
 	{
     testSeq();
 	}
-  
+
   private static function testSet():Void
   {
-    var builder = scala.collection.immutable.SetSingleton.getInstance().newBuilder();
+    var builder = scala.collection.immutable.SetSingleton.singletonInstance.newBuilder();
     builder.plusEquals(1);
     builder.plusEquals(2);
     builder.plusEquals(3);
@@ -35,10 +35,10 @@ class Main
       trace(iterator.next());
     }
   }
-  
+
   private static function testSeq():Void
   {
-    var builder = scala.collection.immutable.SeqSingleton.getInstance().newBuilder();
+    var builder = scala.collection.immutable.SeqSingleton.singletonInstance.newBuilder();
     builder.plusEquals(1);
     builder.plusEquals(2);
     builder.plusEquals(3);
@@ -51,10 +51,10 @@ class Main
       trace(iterator.next());
     }
   }
-  
+
   private static function testMap():Void
   {
-    var builder = scala.collection.immutable.MapSingleton.getInstance().newBuilder();
+    var builder = scala.collection.immutable.MapSingleton.singletonInstance.newBuilder();
     builder.plusEquals(new Tuple2(1, 2));
     builder.plusEquals(new Tuple2(4, 3));
     builder.plusEquals(new Tuple2(3, 4));

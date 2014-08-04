@@ -15,11 +15,9 @@ scala.collection.Parallelizable<A, Dynamic>
 @:native("scala.collection.immutable.Set$")
 extern class SetSingleton extends scala.collection.generic.ImmutableSetFactory<Dynamic>
 {
-	@:extern
-	public static inline function getInstance():SetSingleton
-	{
-		return untyped __java__("scala.collection.immutable.Set$.MODULE$");
-	}
+
+  @:native("MODULE$")
+  public static var singletonInstance(default, null):SetSingleton;
 
 }
 #end
