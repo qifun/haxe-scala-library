@@ -15,7 +15,7 @@ import scala.util.control.TailCalls;
 
 class Main
 {
-	public static function main(arguments:Vector<String>):Void
+	public static function main():Void
 	{
     testSeq();
 	}
