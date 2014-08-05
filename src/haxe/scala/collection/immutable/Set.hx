@@ -17,7 +17,7 @@ extern class SetSingleton extends scala.collection.generic.ImmutableSetFactory<D
 {
 
   @:native("MODULE$")
-  public static var singletonInstance(default, null):SetSingleton;
+  public static var MODULE(default, null):SetSingleton;
 
 }
 #end
