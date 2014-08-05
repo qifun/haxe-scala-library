@@ -15,7 +15,7 @@ scala.collection.SeqLike<A, scala.collection.Seq<A>>
 extern class SeqSingleton extends scala.collection.generic.SeqFactory<Dynamic>
 {
 
-  @:native("MODULE$") public static var singletonInstance(default, never):SeqSingleton;
+  @:native("MODULE$") public static var MODULE(default, never):SeqSingleton;
 
 }
 #end

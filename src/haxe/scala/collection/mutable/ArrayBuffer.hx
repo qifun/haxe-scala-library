@@ -13,7 +13,7 @@ extern class ArrayBuffer<A> extends AbstractTraversable<A>
 extern class ArrayBufferSingleton extends scala.collection.generic.GenericCompanion<Dynamic>
 {
 
-  @:native("MODULE$") public static var singletonInstance(default, never):ArrayBufferSingleton;
+  @:native("MODULE$") public static var MODULE(default, never):ArrayBufferSingleton;
 
 }
 #end

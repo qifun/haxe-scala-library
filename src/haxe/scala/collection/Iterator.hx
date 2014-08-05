@@ -17,7 +17,7 @@ extern class IteratorSingleton
 {
 
   @:native("MODULE$")
-  public static var singletonInstance(default, null):IteratorSingleton;
+  public static var MODULE(default, null):IteratorSingleton;
 
   public function apply<A>(_:scala.collection.Seq<A>):scala.collection.Iterator<A>;
 
