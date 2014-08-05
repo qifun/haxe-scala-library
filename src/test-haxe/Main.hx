@@ -18,11 +18,13 @@ class Main
 	public static function main():Void
 	{
     testSeq();
+    testSet();
+    testMap();
 	}
 
   private static function testSet():Void
   {
-    var builder = scala.collection.immutable.SetSingleton.singletonInstance.newBuilder();
+    var builder = scala.collection.immutable.SetSingleton.MODULE.newBuilder();
     builder.plusEquals(1);
     builder.plusEquals(2);
     builder.plusEquals(3);
@@ -38,7 +40,7 @@ class Main
 
   private static function testSeq():Void
   {
-    var builder = scala.collection.immutable.SeqSingleton.singletonInstance.newBuilder();
+    var builder = scala.collection.immutable.SeqSingleton.MODULE.newBuilder();
     builder.plusEquals(1);
     builder.plusEquals(2);
     builder.plusEquals(3);
@@ -54,7 +56,7 @@ class Main
 
   private static function testMap():Void
   {
-    var builder = scala.collection.immutable.MapSingleton.singletonInstance.newBuilder();
+    var builder = scala.collection.immutable.MapSingleton.MODULE.newBuilder();
     builder.plusEquals(new Tuple2(1, 2));
     builder.plusEquals(new Tuple2(4, 3));
     builder.plusEquals(new Tuple2(3, 4));
