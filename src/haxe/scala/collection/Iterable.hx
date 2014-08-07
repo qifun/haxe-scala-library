@@ -12,6 +12,6 @@ scala.collection.generic.TraversableFactory<Dynamic>
 {
 
   @:native("MODULE$")
-  public static var singletonInstance(default, null):IterableSingleton;
+  public static var MODULE(default, null):IterableSingleton;
 
 }

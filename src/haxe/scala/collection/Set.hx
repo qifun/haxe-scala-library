@@ -17,7 +17,7 @@ extern class SetSingleton extends scala.collection.generic.SetFactory<Dynamic>
 {
 
   @:native("MODULE$")
-  public static var singletonInstance(default, null):SetSingleton;
+  public static var MODULE(default, null):SetSingleton;
 
   override public function empty<A>():scala.collection.Set<A>;
 }

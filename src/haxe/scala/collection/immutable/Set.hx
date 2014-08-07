@@ -4,7 +4,7 @@ package scala.collection.immutable;
 
 import scala.collection.generic.ImmutableSetFactory;
 
-extern interface Set<A> extends 
+extern interface Set<A> extends
 scala.collection.immutable.Iterable<A> extends
 scala.collection.Set<A> extends
 scala.collection.SetLike<A, scala.collection.immutable.Set<A>> extends
