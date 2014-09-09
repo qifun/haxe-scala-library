@@ -12,12 +12,12 @@ scala.collection.Parallelizable<A, Dynamic>
 {
 }
 
-@:native("scala.collection.immutable.Set$")
-extern class SetSingleton extends scala.collection.generic.ImmutableSetFactory<Dynamic>
+@:javaCanonical("scala.collection.immutable", "Set$")
+extern class Set_ extends scala.collection.generic.ImmutableSetFactory<Dynamic>
 {
 
   @:native("MODULE$")
-  public static var MODULE(default, null):SetSingleton;
+  public static var MODULE_(default, null):Set_;
 
 }
 #end

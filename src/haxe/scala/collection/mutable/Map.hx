@@ -8,11 +8,11 @@ scala.collection.mutable.MapLike<A, B, scala.collection.mutable.Map<A, B>>
   
 }
 
-@:native("scala.collection.mutable.Map$")
-extern class MapSingleton extends scala.collection.generic.MutableMapFactory<Dynamic>
+@:javaCanonical("scala.collection.mutable", "Map$")
+extern class Map_ extends scala.collection.generic.MutableMapFactory<Dynamic>
 {
 
-  @:native("MODULE$") public static var MODULE(default, never):MapSingleton;
+  @:native("MODULE$") public static var MODULE_(default, never):Map_;
 
 	override public function empty<A, B>():Map<A, B>;
 }

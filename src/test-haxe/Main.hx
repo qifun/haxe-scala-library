@@ -24,13 +24,13 @@ class Main
 
   private static function testSet():Void
   {
-    var builder = scala.collection.immutable.SetSingleton.MODULE.newBuilder();
-    builder.plusEquals(1);
-    builder.plusEquals(2);
-    builder.plusEquals(3);
-    builder.plusEquals(4);
-    builder.plusEquals(5);
-    builder.plusEquals(6);
+    var builder = scala.collection.immutable.Set.Set_.MODULE_.newBuilder();
+    builder._plus_eq(1);
+    builder._plus_eq(2);
+    builder._plus_eq(3);
+    builder._plus_eq(4);
+    builder._plus_eq(5);
+    builder._plus_eq(6);
     var iterator = builder.result().iterator();
     while (iterator.hasNext())
     {
@@ -40,13 +40,13 @@ class Main
 
   private static function testSeq():Void
   {
-    var builder = scala.collection.immutable.SeqSingleton.MODULE.newBuilder();
-    builder.plusEquals(1);
-    builder.plusEquals(2);
-    builder.plusEquals(3);
-    builder.plusEquals(4);
-    builder.plusEquals(5);
-    builder.plusEquals(6);
+    var builder = scala.collection.immutable.Seq.Seq_.MODULE_.newBuilder();
+    builder._plus_eq(1);
+    builder._plus_eq(2);
+    builder._plus_eq(3);
+    builder._plus_eq(4);
+    builder._plus_eq(5);
+    builder._plus_eq(6);
     var iterator = builder.result().iterator();
     while (iterator.hasNext())
     {
@@ -56,13 +56,13 @@ class Main
 
   private static function testMap():Void
   {
-    var builder = scala.collection.immutable.MapSingleton.MODULE.newBuilder();
-    builder.plusEquals(new Tuple2(1, 2));
-    builder.plusEquals(new Tuple2(4, 3));
-    builder.plusEquals(new Tuple2(3, 4));
-    builder.plusEquals(new Tuple2(5, 6));
-    builder.plusEquals(new Tuple2(6, 5));
-    builder.plusEquals(new Tuple2(2, 1));
+    var builder = scala.collection.immutable.Map.Map_.MODULE_.newBuilder();
+    builder._plus_eq(new Tuple2(1, 2));
+    builder._plus_eq(new Tuple2(4, 3));
+    builder._plus_eq(new Tuple2(3, 4));
+    builder._plus_eq(new Tuple2(5, 6));
+    builder._plus_eq(new Tuple2(6, 5));
+    builder._plus_eq(new Tuple2(2, 1));
     var iterator = builder.result().iterator();
     while (iterator.hasNext())
     {

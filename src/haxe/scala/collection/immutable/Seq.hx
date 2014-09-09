@@ -9,12 +9,12 @@ scala.collection.Parallelizable<A, Dynamic>
 {
 }
 
-@:native("scala.collection.immutable.Seq$")
-extern class SeqSingleton extends scala.collection.generic.SeqFactory<Dynamic>
+@:javaCanonical("scala.collection.immutable", "Seq$")
+extern class Seq_ extends scala.collection.generic.SeqFactory<Dynamic>
 {
 
-  @:native("MODULE$") public static var MODULE(default, never):SeqSingleton;
+  @:native("MODULE$") public static var MODULE_(default, never):Seq_;
   public function newBuilder<A>():scala.collection.mutable.Builder<A, scala.collection.immutable.Seq<A>>;
-  
+
 }
 #end

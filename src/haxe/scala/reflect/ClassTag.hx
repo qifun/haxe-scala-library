@@ -6,11 +6,11 @@ extern interface ClassTag<T> extends OptManifest<T>
 {
 }
 
-@:native("scala.reflect.ClassTag$")
-extern class ClassTagSingleton
+@:javaCanonical("scala.reflect", "ClassTag$")
+extern class ClassTag_
 {
 
-  @:native("MODULE$") public static var MODULE(default, never):ClassTagSingleton;
+  @:native("MODULE$") public static var MODULE_(default, never):ClassTag_;
 
   public function AnyRef():ClassTag<Dynamic>;
   public function Int():ClassTag<Int>;

@@ -5,13 +5,13 @@ extern interface Iterable<A>
 }
 
 
-@:native("scala.collection.Iterable$")
-extern class IterableSingleton extends
+@:javaCanonical("scala.collection", "Iterable$")
+extern class Iterable_ extends
 scala.collection.generic.GenTraversableFactory<Dynamic> implements
 scala.collection.generic.TraversableFactory<Dynamic>
 {
 
   @:native("MODULE$")
-  public static var MODULE(default, null):IterableSingleton;
+  public static var MODULE_(default, null):Iterable_;
 
 }

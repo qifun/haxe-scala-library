@@ -16,8 +16,8 @@ extern class Predef
 
 }
 #end
-@:native("scala.Predef$$less$colon$less")
-extern class Predef_24_24less_24colon_24less<A, B>
+@:javaCanonical("scala", "Predef$$less$colon$less")
+extern class Predef__less_colon_less<A, B>
 {
 }
 

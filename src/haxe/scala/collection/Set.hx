@@ -12,12 +12,12 @@ scala.collection.SetLike<A, scala.collection.Set<A>>
 
 }
 
-@:native("scala.collection.Set$")
-extern class SetSingleton extends scala.collection.generic.SetFactory<Dynamic>
+@:javaCanonical("scala.collection", "Set$")
+extern class Set_ extends scala.collection.generic.SetFactory<Dynamic>
 {
 
   @:native("MODULE$")
-  public static var MODULE(default, null):SetSingleton;
+  public static var MODULE_(default, null):Set_;
 
   override public function empty<A>():scala.collection.Set<A>;
 }

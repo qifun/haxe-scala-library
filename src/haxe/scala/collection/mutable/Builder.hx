@@ -5,7 +5,7 @@ package scala.collection.mutable;
 extern interface Builder<Elem, To> 
 {
   @:native("$plus$eq")
-  public function plusEquals(e:Elem):scala.collection.mutable.Builder<Elem, To>;
+  public function _plus_eq(e:Elem):scala.collection.mutable.Builder<Elem, To>;
   
   public function result():To;
   

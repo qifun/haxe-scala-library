@@ -12,12 +12,12 @@ extern interface Iterator<A> extends TraversableOnce<A>
 }
 
 
-@:native("scala.collection.Iterator$")
-extern class IteratorSingleton
+@:javaCanonical("scala.collection", "Iterator$")
+extern class Iterator_
 {
 
   @:native("MODULE$")
-  public static var MODULE(default, null):IteratorSingleton;
+  public static var MODULE_(default, null):Iterator_;
 
   public function apply<A>(_:scala.collection.Seq<A>):scala.collection.Iterator<A>;
 
