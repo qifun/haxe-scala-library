@@ -23,6 +23,6 @@ package scala.collection.mutable;
 
 extern interface MapLike<A, B, This>
 {
-  
+  function update(key:A, value:B):Void;
 }
 #end
