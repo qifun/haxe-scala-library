@@ -1,5 +1,15 @@
 language: scala
 
+scala:
+  - 2.10.4
+  - 2.11.2
+
+jdk:
+  - oraclejdk8
+  - openjdk8
+  - oraclejdk7
+  - openjdk7
+
 before_install:
  - travis_retry sudo add-apt-repository ppa:eyecreate/haxe -y
  - travis_retry sudo apt-get update -qq
