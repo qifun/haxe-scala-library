@@ -2,4 +2,8 @@ haxeJavaSettings
 
 haxeOptions in Test ++= Seq("-main", "Main")
 
-haxeOptions ++= Seq("-D", "scala")
+for (c <- Seq(Compile, Test)) yield {
+  haxeOptions in c ++=
+    Seq("-D", "scala")
+}
+

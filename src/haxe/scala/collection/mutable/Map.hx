@@ -19,12 +19,11 @@
 
 package scala.collection.mutable;
 
-extern interface Map<A, B> extends 
+extern interface Map<A, B> extends
 scala.collection.mutable.Iterable<scala.Tuple2<A, B>> extends
-scala.collection.Map<A, B> extends 
+scala.collection.Map<A, B> extends
 scala.collection.mutable.MapLike<A, B, scala.collection.mutable.Map<A, B>>
 {
-  
 }
 
 @:javaCanonical("scala.collection.mutable", "Map$")
