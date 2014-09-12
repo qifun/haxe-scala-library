@@ -9,6 +9,12 @@ for (c <- Seq(Compile, Test)) yield {
 
 crossScalaVersions := Seq("2.10.4", "2.11.2")
 
+organization := "com.qifun"
+
+name := "haxe-scala-library"
+
+version := "0.1.0-SNAPSHOT"
+
 homepage := Some(url(s"https://github.com/qifun/${name.value}"))
 
 startYear := Some(2014)
