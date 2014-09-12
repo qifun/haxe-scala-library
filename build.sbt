@@ -7,6 +7,8 @@ for (c <- Seq(Compile, Test)) yield {
     Seq("-D", "scala")
 }
 
+crossScalaVersions := Seq("2.10.4", "2.11.2")
+
 homepage := Some(url(s"https://github.com/qifun/${name.value}"))
 
 startYear := Some(2014)
